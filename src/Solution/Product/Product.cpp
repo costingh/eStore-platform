@@ -25,12 +25,12 @@ Product::Product() : quantity(0), id(0) {}
 
 void Product::decreaseQuantity(int requestedQuantity)
 {
-	quantity = requestedQuantity;
+	quantity -= requestedQuantity;
 }
 
 void Product::increaseQuantity(int requestedQuantity)
 {
-	quantity = requestedQuantity;
+	quantity += requestedQuantity;
 }
 
 void Product::setCategory(const string &category)

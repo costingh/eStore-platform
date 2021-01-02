@@ -471,7 +471,7 @@ json TestHelper::Test_4()
 		return failJson;
 	}
 
-	/// check set-get LRU
+	// check set-get LRU
 	test = {0, 1, 2, 3};
 	obj.setLRU(test);
 	vector<int> aux = obj.getLRU();
@@ -511,10 +511,10 @@ json TestHelper::Test_5(const string &inFile)
 			if (doUpdate)
 				buff.push_back((*i).productID);
 		}
-		/* else
+		else
 		{
 			server->requestDeleteProduct((*i).userID, (*i).productID, (*i).quantity);
-		} */
+		}
 	}
 	map<int, ShoppingCart *> res = server->get__UserID__ProductsCart__();
 	output.push_back(JSONSerializer::FromUserMap(res));

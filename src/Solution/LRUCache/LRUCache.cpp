@@ -11,17 +11,14 @@ LRUCache::LRUCache(int capacity)
 
 vector<int> LRUCache::processRequests(vector<int> requestsNo)
 {
-	capacity = 4;
-	size = 0;
-
-	for (int i = 0; i < 4; i++)
+	for (unsigned int i = 0; i < capacity; i++)
 		lru.push_back(0);
 
 	for (unsigned int i = 0; i < requestsNo.size(); i++)
 	{
-		while (size != 4)
+		while (size != capacity)
 		{
-			for (int j = 0; j < 4; j++)
+			for (unsigned int j = 0; j < capacity; j++)
 			{
 				if (requestsNo[i] == lru[j])
 				{
@@ -38,16 +35,16 @@ vector<int> LRUCache::processRequests(vector<int> requestsNo)
 			}
 		}
 
-		if (size == 4)
+		if (size == capacity)
 		{
 			lru.pop_back();
-			for (int j = 3; j > 0; j--)
+			for (int j = capacity - 1; j > 0; j--)
 				lru[j] = lru[j - 1];
 			lru[0] = requestsNo[i];
 		}
 	}
-	vector<int> aux(4, 0);
-	for (int i = 0; i < 4; i++)
+	vector<int> aux(capacity, 0);
+	for (unsigned int i = 0; i < capacity; i++)
 		aux[i] = lru[i];
 
 	return aux;
