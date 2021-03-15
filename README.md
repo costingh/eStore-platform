@@ -66,12 +66,99 @@ src/
 ┗ main.cpp 
 ```
 
+# Below there is the Product Hierarchy
 ![product-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master/README-producthierarchy.jpg?raw=true)
 
 ![product](https://github.com/costingh/eStore-platform-cpp/blob/master/README-produs.png?raw=true)
 
+# Below there is the User Hierarchy
 ![user-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master/README-userhierarchy.png?raw=true)
 
+# Example of json response
+
+### Marketing analisys
+
+* All users that have the same delivery and billing address, and lives in the city with the most users. The list is sorted after users id.
+
+	* {
+	    "type": "nonPremium",
+	    "UserId": 1278,
+	    "firstName": "Ecaterina",
+	    "lastName": "Stefan",
+	    "email": "ecaterinastefan@gmail.com",
+	    "billingData": {
+	      "county": "Mures",
+	      "locality": "Iernut",
+	      "street": "Mihai_Viteazu",
+	      "number": 122,
+	      "block": "-", //adresa facturare la casa
+	      "apartment": 0
+	    },
+	    "deliveryData": {
+	      "county": "Mures",
+	      "locality": "Iernut",
+	      "street": "Mihai_Viteazu",
+	      "number": 122,
+	      "block": "-", //adresa livrare la casa
+	      "apartment": 0
+	    },
+	    "costTransport": 12.80
+	  }
+ 
+* Show the premium users that have deduction cupons for a certain type of product (all the cupons are generated automatically)
+	* {
+    "type": "premium",
+    "UserId": 2163,
+    "firstName": "Magdalena",
+    "lastName": "Apostol",
+    "email": "magdalenaapostol@gmail.com",
+    "billingData": {
+      "county": "Calarasi",
+      "locality": "Fundulea",
+      "street": "Parcului",
+      "number": 132,
+      "block": "X13",
+      "apartment": 10
+    },
+    "deliveryData": {
+      "county": "Calarasi",
+      "locality": "Fundulea",
+      "street": "Parcului",
+      "number": 132,
+      "block": "X13",
+      "apartment": 10
+    },
+    "premiumSubscriptionCost": 98.75,
+    "discounts": [    //exemplu map reduceri
+      [
+        1435,
+        10
+      ],
+      [
+        3669,
+        8
+      ],
+      [
+        2497,
+        24
+      ],
+      [
+        5402,
+        17
+      ],
+      [
+        2888,
+        24
+      ]
+    ]
+  }
+  
+# Features
+
+## Last Recently Used Cache
+
+Store the id of the last ** n ** searched products, where n is the cache array capacity.
+ 
 ### Installing
 
 * **Run this command** git clone https://github.com/costingh/eStore-platform-cpp.git
