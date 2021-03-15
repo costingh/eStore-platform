@@ -80,7 +80,8 @@ src/
 
 * All users that have the same delivery and billing address, and lives in the city with the most users. The list is sorted after users id.
 
-	* {
+	* ```json
+	{
 	    "type": "nonPremium",
 	    "UserId": 1278,
 	    "firstName": "Ecaterina",
@@ -104,60 +105,63 @@ src/
 	    },
 	    "costTransport": 12.80
 	  }
+	  ```
  
 * Show the premium users that have deduction cupons for a certain type of product (all the cupons are generated automatically)
-	* {
-    "type": "premium",
-    "UserId": 2163,
-    "firstName": "Magdalena",
-    "lastName": "Apostol",
-    "email": "magdalenaapostol@gmail.com",
-    "billingData": {
-      "county": "Calarasi",
-      "locality": "Fundulea",
-      "street": "Parcului",
-      "number": 132,
-      "block": "X13",
-      "apartment": 10
-    },
-    "deliveryData": {
-      "county": "Calarasi",
-      "locality": "Fundulea",
-      "street": "Parcului",
-      "number": 132,
-      "block": "X13",
-      "apartment": 10
-    },
-    "premiumSubscriptionCost": 98.75,
-    "discounts": [    //exemplu map reduceri
-      [
-        1435,
-        10
-      ],
-      [
-        3669,
-        8
-      ],
-      [
-        2497,
-        24
-      ],
-      [
-        5402,
-        17
-      ],
-      [
-        2888,
-        24
-      ]
-    ]
-  }
+	* ```json
+		{
+		    "type": "premium",
+		    "UserId": 2163,
+		    "firstName": "Magdalena",
+		    "lastName": "Apostol",
+		    "email": "magdalenaapostol@gmail.com",
+		    "billingData": {
+		      "county": "Calarasi",
+		      "locality": "Fundulea",
+		      "street": "Parcului",
+		      "number": 132,
+		      "block": "X13",
+		      "apartment": 10
+		    },
+		    "deliveryData": {
+		      "county": "Calarasi",
+		      "locality": "Fundulea",
+		      "street": "Parcului",
+		      "number": 132,
+		      "block": "X13",
+		      "apartment": 10
+		    },
+		    "premiumSubscriptionCost": 98.75,
+		    "discounts": [    //exemplu map reduceri
+		      [
+			1435,
+			10
+		      ],
+		      [
+			3669,
+			8
+		      ],
+		      [
+			2497,
+			24
+		      ],
+		      [
+			5402,
+			17
+		      ],
+		      [
+			2888,
+			24
+		      ]
+		    ]
+		  }
+		  ```
   
 # Features
 
 ## Last Recently Used Cache
 
-Store the id of the last ** n ** searched products, where n is the cache array capacity.
+Store the id of the last n searched products, where n is the cache array capacity.
  
 ### Installing
 
