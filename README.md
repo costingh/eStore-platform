@@ -51,19 +51,19 @@ src/
 ┃ ┣ QuerySolver.cpp
 ┃ ┗ QuerySolver.h
 ┣ utils/ 
-┃ ┣ objectFactory/ ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┃ ┣ objectFactory.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┃ ┗ objectFactory.h ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ FinalQuestionsHelper.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ FinalQuestionsHelper.h ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ JSONSerializer.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ JSONSerializer.h ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ TestHelper.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
-┃ ┣ TestHelper.h ~~~~~~ NU MODIFICATI ~~~~~~~
+┃ ┣ objectFactory/ 
+┃ ┃ ┣ objectFactory.cpp 
+┃ ┃ ┗ objectFactory.h 
+┃ ┣ FinalQuestionsHelper.cpp 
+┃ ┣ FinalQuestionsHelper.h 
+┃ ┣ JSONSerializer.cpp 
+┃ ┣ JSONSerializer.h 
+┃ ┣ TestHelper.cpp 
+┃ ┣ TestHelper.h 
 ┃ ┣ utility.cpp
 ┃ ┗ utility.h
-┣ json.hpp ~~~~~~ NU MODIFICATI ~~~~~~~
-┗ main.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
+┣ json.hpp 
+┗ main.cpp 
 ```
 
 ### Installing
