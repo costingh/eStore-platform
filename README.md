@@ -66,11 +66,11 @@ src/
 ┗ main.cpp 
 ```
 
-![product-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master]/README-producthierarchy.jpg?raw=true)
+![product-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master/README-producthierarchy.jpg?raw=true)
 
-![product](https://github.com/costingh/eStore-platform-cpp/blob/master]/README-produs.jpg?raw=true)
+![product](https://github.com/costingh/eStore-platform-cpp/blob/master/README-produs.png?raw=true)
 
-![user-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master]/README-userhierarchy.jpg?raw=true)
+![user-hierarchy](https://github.com/costingh/eStore-platform-cpp/blob/master/README-userhierarchy.png?raw=true)
 
 ### Installing
 
