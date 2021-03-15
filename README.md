@@ -167,6 +167,7 @@ Store the id of the last n searched products, where n is the cache array capacit
 
 * **Run this command** git clone https://github.com/costingh/eStore-platform-cpp.git
 * To run this project, the operationg system must be linux (or linux subsystem like WSL2 - on Windows 10)
+* Run ./verificatorul.sh
 
 ## Checker and testing
 
@@ -187,11 +188,12 @@ This is a class which tests every function implemented
 
 #### Debugging
 
-To debug the project, an executable must be created by running the following command: ** ./eStore date.in <output_file> <numar_test_din_main> **
-* eStore is the executable name
-* date.in is the folder that contains all that data
-* <output_file> is the name of a folder that will be creted if it doesn't exist. (can have any name)
-* <numar_test_din_main> is the index of the test from main.cpp which will check the test that needs to be debugged
+To debug the project, an executable must be created by running the following command: 
+* ./eStore date.in <output_file> <numar_test_din_main> *
+	* eStore is the executable name
+	* date.in is the folder that contains all that data
+	* <output_file> is the name of a folder that will be creted if it doesn't exist. (can have any name)
+	* <numar_test_din_main> is the index of the test from main.cpp which will check the test that needs to be debugged
 
 ### Tech Stack
 * C++
