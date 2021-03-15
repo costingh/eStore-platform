@@ -81,31 +81,31 @@ src/
 * All users that have the same delivery and billing address, and lives in the city with the most users. The list is sorted after users id.
 
 	* ```json
-	{
-	    "type": "nonPremium",
-	    "UserId": 1278,
-	    "firstName": "Ecaterina",
-	    "lastName": "Stefan",
-	    "email": "ecaterinastefan@gmail.com",
-	    "billingData": {
-	      "county": "Mures",
-	      "locality": "Iernut",
-	      "street": "Mihai_Viteazu",
-	      "number": 122,
-	      "block": "-", //adresa facturare la casa
-	      "apartment": 0
-	    },
-	    "deliveryData": {
-	      "county": "Mures",
-	      "locality": "Iernut",
-	      "street": "Mihai_Viteazu",
-	      "number": 122,
-	      "block": "-", //adresa livrare la casa
-	      "apartment": 0
-	    },
-	    "costTransport": 12.80
-	  }
-	  ```
+		{
+		    "type": "nonPremium",
+		    "UserId": 1278,
+		    "firstName": "Ecaterina",
+		    "lastName": "Stefan",
+		    "email": "ecaterinastefan@gmail.com",
+		    "billingData": {
+		      "county": "Mures",
+		      "locality": "Iernut",
+		      "street": "Mihai_Viteazu",
+		      "number": 122,
+		      "block": "-", //adresa facturare la casa
+		      "apartment": 0
+		    },
+		    "deliveryData": {
+		      "county": "Mures",
+		      "locality": "Iernut",
+		      "street": "Mihai_Viteazu",
+		      "number": 122,
+		      "block": "-", //adresa livrare la casa
+		      "apartment": 0
+		    },
+		    "costTransport": 12.80
+		  }
+		  ```
  
 * Show the premium users that have deduction cupons for a certain type of product (all the cupons are generated automatically)
 	* ```json
@@ -132,7 +132,7 @@ src/
 		      "apartment": 10
 		    },
 		    "premiumSubscriptionCost": 98.75,
-		    "discounts": [    //exemplu map reduceri
+		    "discounts": [
 		      [
 			1435,
 			10
