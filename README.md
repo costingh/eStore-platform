@@ -92,7 +92,7 @@ src/
 		      "locality": "Iernut",
 		      "street": "Mihai_Viteazu",
 		      "number": 122,
-		      "block": "-", //adresa facturare la casa
+		      "block": "-", //billing address
 		      "apartment": 0
 		    },
 		    "deliveryData": {
@@ -100,7 +100,7 @@ src/
 		      "locality": "Iernut",
 		      "street": "Mihai_Viteazu",
 		      "number": 122,
-		      "block": "-", //adresa livrare la casa
+		      "block": "-", //delivery address
 		      "apartment": 0
 		    },
 		    "costTransport": 12.80
