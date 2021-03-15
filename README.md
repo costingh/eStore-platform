@@ -14,6 +14,7 @@ This is a c++ program that follows the example of an online ecommerce store, whe
 
 ### Project structure
 
+```bash
 src/
 ┣ Solution/
 ┃ ┣ LRUCache/
@@ -63,6 +64,7 @@ src/
 ┃ ┗ utility.h
 ┣ json.hpp ~~~~~~ NU MODIFICATI ~~~~~~~
 ┗ main.cpp ~~~~~~ NU MODIFICATI ~~~~~~~
+```
 
 ### Installing
 
